@@ -1,0 +1,121 @@
+# ========================
+# BUILD DIRECTORIES
+# ========================
+build/
+Build/
+[Bb]uild/
+Debug/
+Release/
+x64/
+x86/
+out/
+bin/
+
+# ========================
+# COMPILED OBJECT FILES
+# ========================
+*.o
+*.obj
+*.lo
+*.slo
+
+# ========================
+# PRECOMPILED HEADERS
+# ========================
+*.gch
+*.pch
+
+# ========================
+# COMPILERS OUTPUT
+# ========================
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# ========================
+# STATIC LIBS
+# ========================
+*.a
+*.lib
+
+# ========================
+# DEBUG FILES
+# ========================
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# ========================
+# TEMP FILES
+# ========================
+*.tmp
+*.temp
+*.log
+*.cache
+
+# ========================
+# CMAKE
+# ========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+install_manifest.txt
+
+# ========================
+# AUTOTOOLS
+# ========================
+aclocal.m4
+autom4te.cache/
+configure
+config.log
+config.status
+libtool
+Makefile.in
+
+# ========================
+# VISUAL STUDIO
+# ========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ========================
+# CLION / JETBRAINS
+# ========================
+.idea/
+cmake-build-*/
+
+# ========================
+# VSCODE
+# ========================
+.vscode/
+
+# ========================
+# OS FILES
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# ARCHIVES
+# ========================
+*.zip
+*.tar
+*.gz
+*.rar
+
+# ========================
+# CACHE / OTHER
+# ========================
+.cache/
+*.swp
+*.swo
+*~
