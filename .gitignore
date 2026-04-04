@@ -94,9 +94,16 @@ Makefile.in
 cmake-build-*/
 
 # ========================
-# VSCODE
+# VSCODE (giữ extensions/settings/launch; bỏ qua file cá nhân khác)
 # ========================
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# compile_commands copy từ CMake (đường dẫn máy cục bộ)
+compile_commands.json
 
 # ========================
 # OS FILES
