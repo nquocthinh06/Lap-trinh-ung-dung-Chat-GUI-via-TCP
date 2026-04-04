@@ -12,19 +12,19 @@ endif()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_library(chat_protocol STATIC
-  Code/Shared/Protocol.cpp
+  Shared/Protocol.cpp
 )
 target_include_directories(chat_protocol PUBLIC
-  "${CMAKE_CURRENT_SOURCE_DIR}/Code/Shared"
+  "${CMAKE_CURRENT_SOURCE_DIR}/Shared"
 )
 
 find_package(Threads REQUIRED)
 
-add_executable(server Code/Server/server.cpp)
+add_executable(server Server/server.cpp)
 target_link_libraries(server PRIVATE chat_protocol ws2_32 Threads::Threads)
 
-add_executable(client Code/Client/client.cpp)
+add_executable(client Client/client.cpp)
 target_link_libraries(client PRIVATE chat_protocol ws2_32 Threads::Threads)
 
-add_executable(protocol_demo Code/Shared/main.cpp)
+add_executable(protocol_demo Shared/main.cpp)
 target_link_libraries(protocol_demo PRIVATE chat_protocol)
